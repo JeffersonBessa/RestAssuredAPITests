@@ -1,8 +1,8 @@
 #language:pt
 
-  @loginRegressivo
+  @regressivo
   Funcionalidade: Realizar Login
-    Testes da API de Login
+    Testes Automatizados da API de Login
 
   @loginSucesso
   Cenario: Realizar Login com Sucesso
