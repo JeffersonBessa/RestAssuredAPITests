@@ -1,5 +1,3 @@
-package br.com.jeffersonbessa;
-
 public class Main {
 
     public static void main(String[] args) {
