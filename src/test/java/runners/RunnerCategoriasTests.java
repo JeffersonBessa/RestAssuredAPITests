@@ -9,7 +9,7 @@ import utils.RestUtils;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/features/categoria.feature",
-    tags = "@consultarCategoriaComSucesso",
+    tags = "@regressivocategorias",
     glue = "steps",
     plugin = {"json:target/reports/cucumber-Reports.json", "pretty"},
     snippets = CucumberOptions.SnippetType.CAMELCASE

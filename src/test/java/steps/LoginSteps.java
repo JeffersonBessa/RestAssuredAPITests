@@ -11,6 +11,13 @@ public class LoginSteps {
 
     public static final String SYSTEM_URL = "http://localhost:8080/";
 
+    @Dado("que tenha realizado o login com dados validos")
+    public void queTenhaRealizadoOLoginComDadosValidos() {
+        queTenhaUmPayloadValidoDaAPIDeLogin();
+        envioUmaRequisicaoDoTipoPOSTDeLogin();
+        armazenoOTokenQueReceboDoResponseDeLogin();
+    }
+
     @Dado("que tenha um payload valido da API de Login")
     public void queTenhaUmPayloadValidoDaAPIDeLogin() {
         LoginMap.initLogin();
@@ -34,10 +41,4 @@ public class LoginSteps {
         LoginMap.token = RestUtils.getJsonValue("token");
     }
 
-    @Dado("que tenha realizado o login com dados validos")
-    public void queTenhaRealizadoOLoginComDadosValidos() {
-        queTenhaUmPayloadValidoDaAPIDeLogin();
-        envioUmaRequisicaoDoTipoPOSTDeLogin();
-        armazenoOTokenQueReceboDoResponseDeLogin();
-    }
 }

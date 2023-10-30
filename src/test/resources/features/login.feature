@@ -1,6 +1,6 @@
 #language:pt
 
-  @regressivo
+  @regressivo @regressivologin
   Funcionalidade: Realizar Login
     Testes Automatizados da API de Login
 

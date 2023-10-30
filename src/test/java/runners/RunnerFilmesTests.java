@@ -8,14 +8,14 @@ import utils.RestUtils;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features/login.feature",
-    tags = "@regressivologin",
+    features = "src/test/resources/features/filme.feature",
+    tags = "@regressivofilmes",
     glue = "steps",
     plugin = {"json:target/reports/cucumber-Reports.json", "pretty"},
     snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 
-public class RunnerLoginTests {
+public class RunnerFilmesTests {
 
     @BeforeClass
     public static void beforeClass(){
