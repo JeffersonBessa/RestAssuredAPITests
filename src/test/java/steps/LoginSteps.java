@@ -9,8 +9,6 @@ import java.util.Map;
 
 public class LoginSteps {
 
-    public static final String SYSTEM_URL = "http://localhost:8080/";
-
     @Dado("que tenha realizado o login com dados validos")
     public void queTenhaRealizadoOLoginComDadosValidos() {
         queTenhaUmPayloadValidoDaAPIDeLogin();
@@ -21,13 +19,11 @@ public class LoginSteps {
     @Dado("que tenha um payload valido da API de Login")
     public void queTenhaUmPayloadValidoDaAPIDeLogin() {
         LoginMap.initLogin();
-        RestUtils.setBaseURI(SYSTEM_URL);
     }
 
     @Dado("que tenha um payload da API de Login com as seguintes informacoes")
     public void queTenhaUmPayloadDaAPIDeLoginComAsSeguintesInformacoes(Map<String, Object> map) {
         LoginMap.initLogin();
-        RestUtils.setBaseURI(SYSTEM_URL);
         LoginMap.getLogin().putAll(map);
     }
 
